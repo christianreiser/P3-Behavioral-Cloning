@@ -59,9 +59,9 @@ Here are images from the left, center and right:
 Later on I recognized that the car was pulling to the left, and I read this is due to driving in a circle counterclockwise. So I argumented my dataset by flippung the images with a probability of 0.5 on the vertical axis and multiplied the steering angles by -1.
 Here are two images, where one is fliped.
 
-![not flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
+![](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.png)
 
-![flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/f.jpg)
+![flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/fliped%20the%20normalized.png)
 
 Afer training with the argumented dataset the car pulled too far to the right and I'm not sure why. The only way I was able to fix this issue was by manipulating the steering angle by -0.31.
 
