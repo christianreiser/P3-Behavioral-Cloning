@@ -43,18 +43,18 @@ at first I used the data that was offered by Udaciy.
 However the recorded images also pictured the sky, trees and the hood of the car. Therefore the first step was to crop 70px from the top and 25px from the bottom.
 My second step was to normalize the images.
 Here is an original image followed by and cropped and normalized image:
-![original]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/c.jpg)
-![normalized]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
+![original](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/c.jpg)
+![normalized](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
  However my model always got stuck on the same curves. Consequently I drove in training mode and recorded more data. Especially on the difficult curves I turned recording on, drove the curve, turned recording off, drove back and started with the same curve again. This helped me alot.
 Another problem was when the car got too far to the side, it could not hadle it anymore. Thats why I also used the camera on the left and on the right. I implemented the camera on the left&right and adjusted the steering angle by +0.25 & -0.25. 
 Here are images from the left, center and right:
-![left]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/l.jpg)
-![center]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/c.jpg)
-![right]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/r.jpg)
+![left](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/l.jpg)
+![center](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/c.jpg)
+![right](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/r.jpg)
 Later on I recognized that the car was pulling to the left, and I read this is due to driving in a circle counterclockwise. So I argumented my dataset by flippung the images with a probability of 0.5 on the vertical axis and multiplied the steering angles by -1.
 Here are two images, where one is fliped.
-![not flipped]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
-![flipped]:(https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/f.jpg)
+![not flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
+![flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/f.jpg)
 
 Afer training with the argumented dataset the car pulled too far to the right and I'm not sure why. The only way I was able to fix this issue was by manipulating the steering angle by -0.31.
 
