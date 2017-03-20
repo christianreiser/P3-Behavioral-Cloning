@@ -42,7 +42,7 @@ My project includes the following files:
 at first I used the data that was offered by Udaciy.
 However the recorded images also pictured the sky, trees and the hood of the car. Therefore the first step was to crop 70px from the top and 25px from the bottom.
 My second step was to normalize the images.
-Here is an original image followed by and cropped and normalized image:
+Here is an original image followed by a normalized image:
 
 ![original](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/c.jpg)
 
