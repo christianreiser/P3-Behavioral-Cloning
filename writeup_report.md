@@ -45,7 +45,8 @@ My second step was to normalize the images.
 Here is an original image followed by and cropped and normalized image:
 
 ![original](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/c.jpg)
-![normalized](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
+
+![](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.png)
 
  However my model always got stuck on the same curves. Consequently I drove in training mode and recorded more data. Especially on the difficult curves I turned recording on, drove the curve, turned recording off, drove back and started with the same curve again. This helped me alot.
 Another problem was when the car got too far to the side, it could not hadle it anymore. Thats why I also used the camera on the left and on the right. I implemented the camera on the left&right and adjusted the steering angle by +0.25 & -0.25. 
@@ -59,6 +60,7 @@ Later on I recognized that the car was pulling to the left, and I read this is d
 Here are two images, where one is fliped.
 
 ![not flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/normalized.jpg)
+
 ![flipped](https://github.com/christianreiser/P3-Behavioral-Cloning/blob/master/Images/f.jpg)
 
 Afer training with the argumented dataset the car pulled too far to the right and I'm not sure why. The only way I was able to fix this issue was by manipulating the steering angle by -0.31.
@@ -66,7 +68,7 @@ Afer training with the argumented dataset the car pulled too far to the right an
 
 ####3. An appropriate model architecture has been employed
 
-My first step was to use a convolution neural network model similar to  [comma.ai]'s.(https://github.com/commaai/research/blob/master/train_steering_model.py)
+My first step was to use a convolution neural network model similar to  [comma.ai](https://github.com/commaai/research/blob/master/train_steering_model.py)'s
 I thought this model might be appropriate because it used Convolutions as the first layers, which is very usefuly to reduce the numer of parameters.
 It also contained dropout wich was very helpful in order to reduce overfitting (more details below).
 The last Layers are fully connected ones so my model is able to recognize details.
