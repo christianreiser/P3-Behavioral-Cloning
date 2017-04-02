@@ -1,4 +1,4 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 
 
 
@@ -25,9 +25,9 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
 
-###Files Submitted & Code Quality
+### Files Submitted & Code Quality
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 * model.py containing the script to create and train the model
@@ -37,8 +37,9 @@ My project includes the following files:
 * video.mp4
 
 
-###Model Architecture and Training Strategy
-####2. Data that was used to train the model
+### Model Architecture and Training Strategy
+
+#### 2. Data that was used to train the model
 at first I used the data that was offered by Udaciy.
 However the recorded images also pictured the sky, trees and the hood of the car. Therefore the first step was to crop 70px from the top and 25px from the bottom.
 My second step was to normalize the images.
@@ -66,7 +67,7 @@ Here are two images, where one is fliped.
 Afer training with the argumented dataset the car pulled too far to the right and I'm not sure why. The only way I was able to fix this issue was by manipulating the steering angle by -0.31.
 
 
-####3. An appropriate model architecture has been employed
+#### 3. An appropriate model architecture has been employed
 
 My first step was to use a convolution neural network model similar to  [comma.ai](https://github.com/commaai/research/blob/master/train_steering_model.py)'s
 I thought this model might be appropriate because it used Convolutions as the first layers, which is very usefuly to reduce the numer of parameters.
