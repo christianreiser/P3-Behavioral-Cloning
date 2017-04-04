@@ -40,7 +40,7 @@ My project includes the following files:
 ### Model Architecture and Training Strategy
 
 #### 2. Data that was used to train the model
-at first I used the data that was offered by Udaciy.
+At first I used the data that was offered by Udaciy.
 However the recorded images also pictured the sky, trees and the hood of the car. Therefore the first step was to crop 70px from the top and 25px from the bottom.
 My second step was to normalize the images.
 Here is an original image followed by a normalized image:
