@@ -75,6 +75,7 @@ It also contained dropout wich was very helpful in order to reduce overfitting (
 The last Layers are fully connected ones so my model is able to recognize details.
 
 The architecture is:
+
 0. randomly shuffle the data set 
 1. Cropping
 2. normalization
@@ -97,12 +98,11 @@ I used the Adam optimizer with a learning rate of 0.0001 and mse as the loss fun
 
 
 To see if my model is working at all, I started with only a few images and one epoch. 
-Later I used more data and increased the number of epochs. Also, I split my image and steering angle data into a training and validation set. At earlier with a ratio of 0.3. Later on to provide more data to train I changed it to a ratio of 0.1.
+Later I used more data and increased the number of epochs. Also, I split my image and steering angle data into a training and validation set. At first with a ratio of 0.3. Later on to provide more data to train I changed it to a ratio of 0.1.
 I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set right after the first epoch. This implied that the model was overfitting.
 
 ### Attempts to reduce overfitting in the model
 Overfitting was a big problem. My attempts to reduce overfitting was adding dropout, adding more data, reducing the learning rate and setting the number of epochs to just one.
-The model contains dropout layers in order to reduce overfitting. 
 After the collection process, I had 24108 data points. 
 
 
@@ -111,11 +111,10 @@ After the collection process, I had 24108 data points.
 This project was difficult at first because the car was not driving well at all. Later on it was fun and I learned a lot:
 
 #### Things I learned:
-1. Keras is a really fast war to try different architectures quickly.
+1. Keras is a really fast way to try different architectures quickly.
 2. Training with only one epoch can be enough
-3. GPU enabled training is much faster
-4. Augmenting the data at critical locations helps very much.
-5. Cropping images so unuseful parts are not shown gives better results and leads to a faster training process.
-6. When stuck look at open sourced pipelines like comma.ai's ;)
+3. Augmenting the data at critical locations helps very much.
+4. Cropping images so unuseful parts are not shown gives better results and leads to a faster training process.
+5. When stuck look at open sourced pipelines like comma.ai's ;)
 
 
